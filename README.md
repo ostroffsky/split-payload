@@ -3,7 +3,7 @@ If you grep logs, look for response and request, then unescape json-strings, the
 
 ## Installation
 ```shell
-npm install split-payload
+npm install -g split-payload
 ```
 
 ## Usage
