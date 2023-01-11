@@ -1,0 +1,15 @@
+{
+  "name": "checkouter-payload-body-analyzer",
+  "version": "1.0.0",
+  "description": "Splits found request and response into separate files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "checkouter-payload": "./index.js"
+  }
+}
