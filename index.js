@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const readline = require('readline');
 const stream = require('stream');
 const fs = require('fs');
