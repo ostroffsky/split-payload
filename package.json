@@ -1,5 +1,5 @@
 {
-  "name": "checkouter-payload-body-analyzer",
+  "name": "split-payload",
   "version": "1.0.0",
   "description": "Splits found request and response into separate files",
   "main": "index.js",
@@ -7,9 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexey Ostrovsky",
   "license": "ISC",
   "bin": {
-    "checkouter-payload": "./index.js"
-  }
+    "split-payload": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ostroffsky/split-payload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ostroffsky/split-payload/issues"
+  },
+  "homepage": "https://github.com/ostroffsky/split-payload#readme"
 }
