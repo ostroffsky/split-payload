@@ -1,6 +1,6 @@
 {
   "name": "split-payload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Splits found request and response into separate files",
   "main": "index.js",
   "scripts": {
