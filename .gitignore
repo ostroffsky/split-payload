@@ -1,6 +1,6 @@
 # Generated files
-request.json
-response.json
+request_*.json
+response_*.json
 
 # test data
 test.txt

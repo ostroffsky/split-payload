@@ -4,7 +4,7 @@
   "description": "Splits found request and response into separate files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Alexey Ostrovsky",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ostroffsky/split-payload/issues"
   },
-  "homepage": "https://github.com/ostroffsky/split-payload#readme"
+  "homepage": "https://github.com/ostroffsky/split-payload#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
