@@ -10,7 +10,7 @@ function writePayload(payloadJson) {
         return;
     }
 
-    let requestIdEscaped = requestId.replaceAll('/', '_');
+    let requestIdEscaped = requestId.replace(/\//g, '_');
     let filename = `${type}_${requestIdEscaped}.json`;
 
     try {
