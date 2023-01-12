@@ -4,25 +4,16 @@ orbs:
   node: circleci/node@4.7
 
 jobs:
-  test:
+  run-tests:
     docker:
       - image: cimg/node:16.10
     steps:
       - checkout
       - run:
-          name: List project files
-          command: ls -la
-
-      - run:
-          name: Git status
-          command: git status
-
-      - run:
           name: Install dependencies
           command: |
             npm ci
             npm install
-            npm install jest-junit 
       - run:
           name: Run tests
           command: npm test
@@ -32,18 +23,8 @@ jobs:
           path: reports
       - store_artifacts:
           path: coverage
-      - run:
-          name: Debug info
-          command: |
-            ls -la
-            cd /
-            ls -la
-            cd ~
-            ls -la
 
-
-          
 workflows:
   sample:
     jobs:
-      - test
+      - run-tests
