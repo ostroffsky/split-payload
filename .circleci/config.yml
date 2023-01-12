@@ -35,7 +35,7 @@ jobs:
           command: npm install --dev jest-junit
       - run:
           name: Run tests with JUnit as reporter
-          command: ./node_modules jest --ci --runInBand --reporters=default --reporters=jest-junit
+          command: ./node_modules/jest/bin/jest.js --ci --runInBand --reporters=default --reporters=jest-junit
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/
       - store_artifacts:
