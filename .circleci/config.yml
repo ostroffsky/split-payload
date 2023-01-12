@@ -29,16 +29,16 @@ jobs:
       - run:
           name: Run tests
           command: |
-            mkdir reports; \
+            mkdir reports \
             npm test
           environment:
-            JEST_JUNIT_OUTPUT_DIR: reports
+            JEST_JUNIT_OUTPUT_DIR: ./reports
       - store_artifacts:
           path: coverage
       - store_test_results:
-          path: reports
+          path: ./reports
       - store_artifacts:
-          path: reports
+          path: ./reports
 
           
 workflows:
