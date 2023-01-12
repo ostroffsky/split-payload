@@ -35,6 +35,10 @@ jobs:
           path: reports
       - store_artifacts:
           path: coverage
+      - run:
+          name: Debug info
+          command: ls -la
+
 
           
 workflows:
