@@ -28,9 +28,9 @@ jobs:
           pkg-manager: npm
       - run:
           name: Run tests
-          command: npm test
           environment:
             JEST_JUNIT_OUTPUT_DIR: reports
+          command: npm test
       - store_artifacts:
           path: coverage
       - store_artifacts:
