@@ -14,6 +14,10 @@ jobs:
           command: ls -la
 
       - run:
+          name: Git status
+          command: git status
+
+      - run:
           name: Install dependencies
           command: |
             npm ci
