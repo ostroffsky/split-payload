@@ -28,7 +28,7 @@ jobs:
           pkg-manager: npm
       - run:
           name: Run tests
-          command: npm test2
+          command: npm test
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports
             JEST_JUNIT_OUTPUT_NAME: junit.xml
