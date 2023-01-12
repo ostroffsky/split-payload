@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ostroffsky/split-payload#readme",
   "devDependencies": {
-    "jest": "^29.3.1"
+    "jest": "^29.3.1",
+    "jest-junit": "^15.0.0"
   }
 }
