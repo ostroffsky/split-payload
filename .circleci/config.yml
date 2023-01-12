@@ -23,7 +23,10 @@ jobs:
           path: coverage
       - run:
           name: Debug info
-          command: ls -la
+          command: |
+            ls -la
+            cd /
+            ls -ls
 
 
           
