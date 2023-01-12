@@ -30,7 +30,7 @@ jobs:
           name: Run tests
           command: npm test
           environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports
+            JEST_JUNIT_OUTPUT_DIR: reports
       - store_artifacts:
           path: coverage
       - store_artifacts:
