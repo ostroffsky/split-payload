@@ -4,7 +4,7 @@
   "description": "Splits found request and response into separate files",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage --ci --runInBand --reporters=default --reporters=jest-junit"
   },
   "keywords": [],
   "author": "Alexey Ostrovsky",
