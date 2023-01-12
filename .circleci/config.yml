@@ -26,16 +26,9 @@ jobs:
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
-#      - run:
-#          name: Run tests
-#          command: npm test
-      
       - run:
-          name: Install JUnit coverage reporter
-          command: npm install --dev jest-junit
-      - run:
-          name: Run tests with JUnit as reporter
-          command: ./node_modules/jest/bin/jest.js --ci --runInBand --reporters=default --reporters=jest-junit
+          name: Run tests
+          command: npm test
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/
       - store_artifacts:
