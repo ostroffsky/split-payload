@@ -26,12 +26,23 @@ jobs:
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
+#      - run:
+#          name: Run tests
+#          command: npm test
+      
       - run:
-          name: Run tests
-          command: npm test
+          name: Install JUnit coverage reporter
+          command: npm install --dev jest-junit
+      - run:
+          name: Run tests with JUnit as reporter
+          command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/
       - store_artifacts:
           path: coverage
-
+      - store_test_results:
+          path: ./reports/
+          
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
