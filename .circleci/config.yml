@@ -27,6 +27,9 @@ jobs:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
       - run:
+          name: Crate reports directory
+          command: mkdir reports
+      - run:
           name: Run tests
           environment:
             JEST_JUNIT_OUTPUT_DIR: reports
