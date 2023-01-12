@@ -1,4 +1,4 @@
-const splitToLinesAndProcess = require('./splitToLinesAndProcess');
+const splitToLinesAndProcess = require('../splitToLinesAndProcess');
 
 test('3 line text 3 processor calls', () => {
     const mockLinesProcessor = jest.fn();

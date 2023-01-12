@@ -11,7 +11,7 @@ function processLines(lines) {
     for (const lineAsString of lines) {
         if (lineAsString) {
             let parsedLine = parseLine(lineAsString);
-            if (parsedLine) {
+            if (!!parsedLine) {
                 payloadJsons.push(parsedLine);
             }
         }

@@ -18,6 +18,7 @@ function writePayload(payloadJson) {
 
         console.log(`Successfully wrote ${type} for requestId: ${requestId} into ${filename}`);
     } catch (err) {
+        /* istanbul ignore next */
         console.error(err);
     }
 }

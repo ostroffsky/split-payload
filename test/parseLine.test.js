@@ -1,4 +1,4 @@
-const parseLine = require('./parseLine');
+const parseLine = require('../parseLine');
 
 const EMPTY_INPUT = '{}';
 const EXPECTED_EMPTY_OUTPUT = {
@@ -25,4 +25,8 @@ test('empty object', () => {
 
 test('normal object', () => {
     expect(parseLine(INPUT)).toStrictEqual(EXPECTED_OUTPUT);
+});
+
+test('broken object', () => {
+    expect(parseLine("NOT_JSON")).toStrictEqual({});
 });
