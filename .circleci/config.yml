@@ -30,7 +30,8 @@ jobs:
           name: Run tests
           command: |
             mkdir reports \
-            npm test
+            echo $JEST_JUNIT_OUTPUT_DIR \
+            npm test \
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports
       - store_artifacts:
