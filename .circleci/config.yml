@@ -30,14 +30,14 @@ jobs:
           name: Run tests
           command: npm test
           environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports
+            JEST_JUNIT_OUTPUT_DIR: /home/circleci/project/reports
             JEST_JUNIT_OUTPUT_NAME: junit.xml
       - store_artifacts:
           path: reports
       - store_artifacts:
           path: coverage
       - store_test_results:
-          path: reports/junit.xml
+          path: reports
 
           
 workflows:
