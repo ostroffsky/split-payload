@@ -4,7 +4,7 @@
   "description": "Splits found request and response into separate files",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage --ci --runInBand"
   },
   "keywords": [],
   "author": "Alexey Ostrovsky",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ostroffsky/split-payload#readme",
   "devDependencies": {
-    "jest": "^29.3.1"
+    "jest": "^29.3.1",
+    "jest-junit": "^15.0.0"
   }
 }

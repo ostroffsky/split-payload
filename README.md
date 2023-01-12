@@ -11,3 +11,6 @@ npm install -g split-payload
 zgrep YOUR_REQUEST_ID YOUR_PAYLOAD_ARCHIVE.gz | split-payload
 ```
 As a result you get two files with prettified JSON in the current directory: request.json and response.json.
+
+## Status
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ostroffsky/split-payload/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ostroffsky/split-payload/tree/main)
