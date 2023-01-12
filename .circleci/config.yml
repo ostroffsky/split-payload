@@ -29,10 +29,8 @@ jobs:
       - run:
           name: Run tests
           command: npm test
-      - store_test_results:
-          path: tmp/test_results
       - store_artifacts:
-          path: tmp/artifacts
+          path: coverage
 
 workflows:
   # Below is the definition of your workflow.
