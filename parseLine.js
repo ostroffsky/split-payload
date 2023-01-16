@@ -11,6 +11,7 @@ function parseLine(lineAsString) {
     return {
         "requestId": json["requestId"] || "",
         "type": json["type"] || "",
+        "uri": json["uri"] || "",
         "payload": JSON.parse(json["payload"] || "{}"),
     };
 }

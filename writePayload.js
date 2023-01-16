@@ -2,6 +2,7 @@ const fs = require('fs');
 
 function writePayload(payloadJson) {
     let type = payloadJson['type'];
+    let method = payloadJson['uri'];
     let requestId = payloadJson['requestId'];
     let payload = payloadJson['payload'];
 
@@ -11,7 +12,8 @@ function writePayload(payloadJson) {
     }
 
     let requestIdEscaped = requestId.replace(/\//g, '_');
-    let filename = `${type}_${requestIdEscaped}.json`;
+    let methodEscaped = method.replace(/\//g, '_');
+    let filename = `${type}_${methodEscaped}_${requestIdEscaped}.json`;
 
     try {
         fs.writeFileSync(filename, JSON.stringify(payload, null, 2));

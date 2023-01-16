@@ -5,6 +5,7 @@ const EXPECTED_EMPTY_OUTPUT = {
     'payload': {},
     'requestId': '',
     'type': '',
+    'uri': ''
 };
 
 const INPUT = '{"payload":"{\\"a\\":\\"b\\",\\"c\\":\\"d\\"}","requestId":"1673427533944/1ec2199490de7a2f59d7b735f9f10500/13","type":"request","uri":"/cart","timestamp":1673427534134}';
@@ -14,7 +15,8 @@ const EXPECTED_OUTPUT = {
         "c": "d"
     },
     'requestId': '1673427533944/1ec2199490de7a2f59d7b735f9f10500/13',
-    'type': 'request'
+    'type': 'request',
+    'uri': '/cart'
 };
 
 
